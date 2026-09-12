@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SvelteSet } from 'svelte/reactivity';
+	import { PersistedState } from 'runed';
 	import Card from './Card.svelte';
 	import cards from './cards.json';
 	import decksJson from './decks.json';
@@ -34,27 +34,30 @@
 		if (search.length < 2) {
 			return [];
 		}
+
+		const selectedIds = selectedCards.current.map((card) => card.id);
 		return cards.filter(
-			(card) => !selectedCards.has(card) && card.name.toLowerCase().includes(search.toLowerCase())
+			(card) =>
+				!selectedIds.includes(card.id) && card.name.toLowerCase().includes(search.toLowerCase())
 		);
 	});
 
-	let selectedCards = new SvelteSet<Card>();
+	let selectedCards = new PersistedState<Card[]>('selected-cards', []);
 
 	let matchingDecks = $derived(
 		decks.filter((deck) => {
 			const deckIds = deck.cards.map((card) => card.id);
-			return [...selectedCards].every((card) => deckIds.includes(card.id));
+			return selectedCards.current.every((card) => deckIds.includes(card.id));
 		})
 	);
 
 	function handleCardAdd(card: Card) {
-		selectedCards.add(card);
+		selectedCards.current.push(card);
 		search = '';
 		searchInput.focus();
 	}
-	function handleCardRemove(card: Card) {
-		selectedCards.delete(card);
+	function handleCardRemove(index: number) {
+		selectedCards.current.splice(index, 1);
 		searchInput.focus();
 	}
 </script>
@@ -83,12 +86,12 @@
 	</div>
 {/if}
 
-{#if selectedCards.size > 0}
+{#if selectedCards.current.length > 0}
 	<br />
 	<p>Selected (click to remove):</p>
 	<div class="flex flex-wrap gap-2">
-		{#each selectedCards as card (card.id)}
-			<button type="button" onclick={() => handleCardRemove(card)}>
+		{#each selectedCards.current as card, i (card.id)}
+			<button type="button" onclick={() => handleCardRemove(i)}>
 				<Card {card} />
 			</button>
 		{/each}
@@ -98,7 +101,7 @@
 		type="button"
 		class="btn"
 		onclick={() => {
-			selectedCards.clear();
+			selectedCards.current = [];
 			searchInput.focus();
 		}}
 		>Clear all
