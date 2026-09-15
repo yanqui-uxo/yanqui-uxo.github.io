@@ -26,10 +26,7 @@
 	let { card, count }: Props = $props();
 </script>
 
-<figure class="flex flex-col justify-end gap-1 w-24 h-full">
-	<figcaption class="text-xs text-center">
-		{card.name} <br /> ({card.id})
-	</figcaption>
+<figure class="flex flex-col justify-start gap-1 w-24 h-full">
 	<div class="relative">
 		{#await getImagePath(card.id)}
 			<p>{card.name} ({card.id})</p>
@@ -42,4 +39,7 @@
 			</p>
 		{/if}
 	</div>
+	<figcaption class="text-xs text-center">
+		{card.name} <br /> ({card.id})
+	</figcaption>
 </figure>
