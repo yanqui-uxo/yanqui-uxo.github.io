@@ -3,6 +3,7 @@ import type { Element } from 'domhandler';
 import { readFileSync, writeFileSync } from 'node:fs';
 import cardsJson from 'pokemon-tcg-pocket-database/dist/cards.min.json' with { type: 'json' };
 import fixedDecks from './fixed_decks.json' with { type: 'json' };
+import newDecks from './new_decks.json' with { type: 'json' };
 import unknownDecksJson from './unknown_decks.json' with { type: 'json' };
 
 // HTML taken from https://game8.co/games/Pokemon-TCG-Pocket/archives/483771
@@ -12,7 +13,7 @@ const $ = cheerio.load(html);
 
 const cardIds: Set<string> = new Set<string>();
 
-for (const deck of unknownDecksJson) {
+for (const deck of [...newDecks, ...unknownDecksJson]) {
 	for (const card of deck.cards) {
 		cardIds.add(card.id);
 	}
@@ -68,6 +69,10 @@ const htmlDecks = $('table:contains("All Solo Battles")')
 
 		const [name, set] = [match[1], match[2]];
 
+		if (newDecks.find((deck) => deck.name === name && deck.set === set)) {
+			return null;
+		}
+
 		const fixedDeck = fixedDecks.find((deck) => deck.name === name && deck.set === set);
 		if (fixedDeck) {
 			for (const { id } of fixedDeck.cards) {
@@ -92,7 +97,8 @@ const cards = cardsJson
 		image: card.image
 	}))
 	.filter((card) => cardIds.has(card.id));
-const decks = htmlDecks.concat(unknownDecks);
+
+const decks = [...newDecks, ...htmlDecks, ...unknownDecks];
 
 const dupeIds: Record<string, string> = {};
 const dedupedCards: typeof cards = [];

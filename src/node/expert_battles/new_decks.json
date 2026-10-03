@@ -1,0 +1,168 @@
+[
+	{
+		"name": "Whimsicott ex",
+		"set": "Deluxe Pack: Mega",
+		"cards": [
+			{ "id": "B1a-005", "count": 2 },
+			{ "id": "B1a-006", "count": 2 },
+			{ "id": "B1-015", "count": 2 },
+			{ "id": "B1-016", "count": 2 },
+			{ "id": "PROMO-A-002", "count": 1 },
+			{ "id": "PROMO-A-005", "count": 2 },
+			{ "id": "B1a-067", "count": 2 },
+			{ "id": "B4a-068", "count": 2 },
+			{ "id": "PROMO-A-007", "count": 2 },
+			{ "id": "B1-225", "count": 2 },
+			{ "id": "B3-153", "count": 1 }
+		]
+	},
+	{
+		"name": "Mega Charizard X ex",
+		"set": "Deluxe Pack: Mega",
+		"cards": [
+			{ "id": "A3b-010", "count": 2 },
+			{ "id": "B2b-007", "count": 2 },
+			{ "id": "B2b-008", "count": 2 },
+			{ "id": "B1a-014", "count": 1 },
+			{ "id": "B2b-009", "count": 2 },
+			{ "id": "PROMO-A-002", "count": 1 },
+			{ "id": "PROMO-A-005", "count": 2 },
+			{ "id": "B1-217", "count": 2 },
+			{ "id": "B3-148", "count": 1 },
+			{ "id": "PROMO-A-007", "count": 2 },
+			{ "id": "A2-150", "count": 1 },
+			{ "id": "B1-225", "count": 1 },
+			{ "id": "B4-155", "count": 1 }
+		]
+	},
+	{
+		"name": "Greninja ex",
+		"set": "Deluxe Pack: Mega",
+		"cards": [
+			{ "id": "B1-071", "count": 2 },
+			{ "id": "B1-072", "count": 1 },
+			{ "id": "A1-089", "count": 1 },
+			{ "id": "B1-073", "count": 2 },
+			{ "id": "B2a-037", "count": 1 },
+			{ "id": "A4a-020", "count": 2 },
+			{ "id": "PROMO-A-002", "count": 1 },
+			{ "id": "PROMO-A-005", "count": 2 },
+			{ "id": "A3-144", "count": 2 },
+			{ "id": "A4-151", "count": 2 },
+			{ "id": "PROMO-A-007", "count": 2 },
+			{ "id": "A2a-072", "count": 1 },
+			{ "id": "B4-154", "count": 1 }
+		]
+	},
+	{
+		"name": "Miraidon ex",
+		"set": "Deluxe Pack: Mega",
+		"cards": [
+			{ "id": "B1a-024", "count": 2 },
+			{ "id": "A1-098", "count": 2 },
+			{ "id": "B3-054", "count": 2 },
+			{ "id": "B3a-019", "count": 2 },
+			{ "id": "B3a-018", "count": 2 },
+			{ "id": "PROMO-A-005", "count": 2 },
+			{ "id": "B3a-070", "count": 1 },
+			{ "id": "PROMO-A-007", "count": 2 },
+			{ "id": "A2-150", "count": 1 },
+			{ "id": "B1a-068", "count": 1 },
+			{ "id": "B1-225", "count": 1 },
+			{ "id": "B3a-073", "count": 2 }
+		]
+	},
+	{
+		"name": "Mega Gardevoir ex",
+		"set": "Deluxe Pack: Mega",
+		"cards": [
+			{ "id": "B3b-032", "count": 1 },
+			{ "id": "B2-070", "count": 2 },
+			{ "id": "B2-073", "count": 1 },
+			{ "id": "B4-071", "count": 2 },
+			{ "id": "B4-072", "count": 1 },
+			{ "id": "B2-066", "count": 2 },
+			{ "id": "PROMO-A-005", "count": 2 },
+			{ "id": "A3-144", "count": 2 },
+			{ "id": "PROMO-A-007", "count": 2 },
+			{ "id": "A2-150", "count": 1 },
+			{ "id": "B2-149", "count": 2 },
+			{ "id": "B2-155", "count": 2 }
+		]
+	},
+	{
+		"name": "Mega Lucario ex",
+		"set": "Deluxe Pack: Mega",
+		"cards": [
+			{ "id": "B3a-036", "count": 1 },
+			{ "id": "B3-079", "count": 2 },
+			{ "id": "B3-081", "count": 2 },
+			{ "id": "B2-092", "count": 2 },
+			{ "id": "PROMO-A-002", "count": 1 },
+			{ "id": "PROMO-A-005", "count": 2 },
+			{ "id": "A2-147", "count": 1 },
+			{ "id": "PROMO-A-007", "count": 2 },
+			{ "id": "A1-225", "count": 1 },
+			{ "id": "A2-150", "count": 1 },
+			{ "id": "B1-225", "count": 2 },
+			{ "id": "B3-149", "count": 1 },
+			{ "id": "B3-154", "count": 2 }
+		]
+	},
+	{
+		"name": "Zoroark ex",
+		"set": "Deluxe Pack: Mega",
+		"cards": [
+			{ "id": "B4-103", "count": 1 },
+			{ "id": "B1-151", "count": 1 },
+			{ "id": "B3b-041", "count": 1 },
+			{ "id": "B3-115", "count": 1 },
+			{ "id": "B3a-047", "count": 1 },
+			{ "id": "B3-105", "count": 2 },
+			{ "id": "B3-106", "count": 2 },
+			{ "id": "PROMO-A-002", "count": 1 },
+			{ "id": "PROMO-A-005", "count": 2 },
+			{ "id": "B4-148", "count": 2 },
+			{ "id": "PROMO-A-007", "count": 2 },
+			{ "id": "A1-225", "count": 1 },
+			{ "id": "A2-150", "count": 1 },
+			{ "id": "B1-225", "count": 2 }
+		]
+	},
+	{
+		"name": "Melmetal ex",
+		"set": "Deluxe Pack: Mega",
+		"cards": [
+			{ "id": "B2-110", "count": 2 },
+			{ "id": "B2-111", "count": 2 },
+			{ "id": "A1-181", "count": 2 },
+			{ "id": "B1-174", "count": 2 },
+			{ "id": "B2a-077", "count": 2 },
+			{ "id": "PROMO-A-002", "count": 1 },
+			{ "id": "PROMO-A-005", "count": 2 },
+			{ "id": "B1-219", "count": 1 },
+			{ "id": "B2-148", "count": 2 },
+			{ "id": "PROMO-A-007", "count": 2 },
+			{ "id": "A2-150", "count": 1 },
+			{ "id": "B1-225", "count": 1 }
+		]
+	},
+	{
+		"name": "Mega Rayquaza ex",
+		"set": "Deluxe Pack: Mega",
+		"cards": [
+			{ "id": "A4-032", "count": 1 },
+			{ "id": "B4-124", "count": 2 },
+			{ "id": "B4-120", "count": 2 },
+			{ "id": "B4-116", "count": 2 },
+			{ "id": "B4-117", "count": 2 },
+			{ "id": "A4-066", "count": 1 },
+			{ "id": "PROMO-A-002", "count": 1 },
+			{ "id": "PROMO-A-005", "count": 2 },
+			{ "id": "PROMO-A-007", "count": 2 },
+			{ "id": "A2-150", "count": 1 },
+			{ "id": "B1-225", "count": 2 },
+			{ "id": "B4-155", "count": 2 }
+		]
+	}
+]
