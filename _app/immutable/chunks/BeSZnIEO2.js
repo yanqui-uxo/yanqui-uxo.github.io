@@ -1,0 +1,1 @@
+var e=``+new URL(`../assets/B4b-419.LnI_jCRM.avif`,import.meta.url).href;export{e as default};
