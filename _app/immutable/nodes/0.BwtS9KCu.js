@@ -1,0 +1,1 @@
+import{J as e,P as t,Y as n,_ as r,f as i,y as a}from"../chunks/CLoGwC-m.js";import"../chunks/xihTtKlq.js";var o=n({prerender:()=>!0}),s=a(`<div class="m-2"><!></div>`);function c(n,a){var o=s();i(t(o),()=>a.children),e(o),r(n,o)}export{c as component,o as universal};
