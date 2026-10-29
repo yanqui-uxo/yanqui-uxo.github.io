@@ -112,7 +112,7 @@
 
 {#each matchingDecks as deck (deck)}
 	<div class="collapse collapse-arrow">
-		<input type="checkbox" checked />
+		<input type="checkbox" checked={matchingDecks.length <= 5} />
 		<h1 class="collapse-title text-2xl">{deck.name} ({deck.set})</h1>
 		<div class="collapse-content flex flex-wrap gap-2">
 			{#each deck.cards as card (card.id)}
