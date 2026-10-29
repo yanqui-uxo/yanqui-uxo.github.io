@@ -495,5 +495,23 @@
 			{ "id": "B1-225", "count": 1 },
 			{ "id": "B4-155", "count": 1 }
 		]
+	},
+	{
+		"name": "Mega Rayquaza ex",
+		"cards": [
+			{ "id": "A4-032", "count": 1 },
+			{ "id": "A4-066", "count": 1 },
+			{ "id": "B4-116", "count": 2 },
+			{ "id": "B4-117", "count": 2 },
+			{ "id": "B4-124", "count": 2 },
+			{ "id": "B4b-420", "count": 2 },
+			{ "id": "A2-147", "count": 1 },
+			{ "id": "PROMO-A-002", "count": 1 },
+			{ "id": "PROMO-A-005", "count": 2 },
+			{ "id": "PROMO-A-007", "count": 2 },
+			{ "id": "A2-150", "count": 1 },
+			{ "id": "B1-225", "count": 1 },
+			{ "id": "B4-155", "count": 2 }
+		]
 	}
 ]
